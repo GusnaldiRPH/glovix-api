@@ -1,0 +1,70 @@
+/* Glovix.Co - Lotus Pond Palette Theme */
+/* Colors: Dark Green #0A3323 | Moss Green #839958 | Beige #F7F4D5 | Rosy Brown #D3968C | Midnight Green #105666 */
+:root {
+  --bg-page:#F7F4D5; --bg-white:#FDFBF0; --bg-soft:#EDE9BF;
+  --text-primary:#0A3323; --text-secondary:#3D5243; --text-muted:#7A8C6E;
+  --green-700:#0A3323; --green-500:#105666; --green-400:#839958; --green-100:#DDE5C8; --green-50:#EEF2E3;
+  --rosy-600:#B8705E; --rosy-500:#D3968C; --rosy-100:#F5DDD9; --rosy-50:#FBF0EE;
+  --amber-600:#B8705E; --amber-100:#F5DDD9;
+  --border:#D4CFA0; --border-soft:#E5E0BC;
+}
+*{font-family:'Plus Jakarta Sans',sans-serif;}
+body{background:var(--bg-page)!important;color:var(--text-primary)!important;}
+h1,h2,h3,h4,h5,h6{font-family:'DM Serif Display',serif!important;color:var(--text-primary)!important;}
+p,li,span,td,th,label,small,strong{color:var(--text-primary)!important;}
+.text-muted{color:var(--text-muted)!important;}
+.lead{color:var(--text-secondary)!important;}
+a{color:var(--green-500);} a:hover{color:var(--green-700);}
+.card{background:var(--bg-white)!important;border:1px solid var(--border-soft)!important;border-radius:12px!important;box-shadow:0 1px 6px rgba(0,0,0,.06)!important;color:var(--text-primary)!important;}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1)!important;transform:translateY(-2px)!important;}
+.card-body{background:transparent!important;color:var(--text-primary)!important;}
+.card-title{color:var(--text-primary)!important;}
+.card-text{color:var(--text-secondary)!important;}
+.card-header{background:var(--bg-soft)!important;border-color:var(--border)!important;}
+.btn-primary,.btn-success{background:var(--green-500)!important;border:none!important;color:#F7F4D5!important;font-weight:600!important;}
+.btn-primary:hover,.btn-success:hover{background:var(--green-700)!important;color:#F7F4D5!important;box-shadow:0 4px 16px rgba(16,86,102,.3)!important;}
+.btn-outline-primary,.btn-outline-success{border:2px solid var(--green-500)!important;color:var(--green-500)!important;background:transparent!important;}
+.btn-outline-primary:hover,.btn-outline-success:hover{background:var(--green-500)!important;color:#F7F4D5!important;}
+.btn-danger{background:var(--rosy-100)!important;border:1px solid #EBBBAF!important;color:var(--rosy-600)!important;}
+.btn-warning{background:var(--rosy-50)!important;border:1px solid var(--rosy-100)!important;color:var(--rosy-600)!important;}
+.btn-secondary{background:var(--bg-soft)!important;border:1px solid var(--border)!important;color:var(--text-secondary)!important;}
+.form-control,.form-select{background:var(--bg-white)!important;border:1.5px solid var(--border)!important;color:var(--text-primary)!important;}
+.form-control:focus,.form-select:focus{border-color:var(--green-400)!important;box-shadow:0 0 0 3px rgba(131,153,88,.18)!important;}
+.form-control::placeholder{color:var(--text-muted)!important;}
+.form-label{color:var(--text-secondary)!important;font-weight:500!important;}
+.table{color:var(--text-primary)!important;}
+.table>:not(caption)>*>*{background:transparent!important;color:var(--text-primary)!important;border-color:var(--border-soft)!important;}
+.table thead th{background:var(--bg-soft)!important;color:var(--text-secondary)!important;border-color:var(--border)!important;font-weight:600!important;}
+.table-hover>tbody>tr:hover>*{background:var(--green-50)!important;}
+.badge.bg-success,.bg-success{background:var(--green-100)!important;color:var(--green-700)!important;}
+.badge.bg-primary,.bg-primary{background:var(--green-100)!important;color:var(--green-500)!important;}
+.badge.bg-warning{background:var(--rosy-100)!important;color:var(--rosy-600)!important;}
+.badge.bg-secondary{background:var(--bg-soft)!important;color:var(--text-secondary)!important;}
+.badge.bg-danger{background:var(--rosy-50)!important;color:var(--rosy-600)!important;}
+.alert-success{background:var(--green-50)!important;border:1px solid var(--green-100)!important;border-left:4px solid var(--green-400)!important;color:var(--green-700)!important;border-radius:12px!important;}
+.alert-danger{background:var(--rosy-50)!important;border-left:4px solid var(--rosy-500)!important;color:var(--rosy-600)!important;border-radius:12px!important;}
+.alert-warning{background:var(--rosy-100)!important;border-left:4px solid var(--rosy-500)!important;color:var(--rosy-600)!important;border-radius:12px!important;}
+.alert-info{background:#EAF2F4!important;border-left:4px solid var(--green-500)!important;color:var(--green-500)!important;border-radius:12px!important;}
+.progress{background:var(--bg-soft)!important;border-radius:99px!important;}
+.progress-bar{background:linear-gradient(90deg,var(--green-500),var(--green-400))!important;}
+.page-link{background:var(--bg-white)!important;border-color:var(--border)!important;color:var(--text-secondary)!important;}
+.page-item.active .page-link{background:var(--green-500)!important;border-color:var(--green-500)!important;color:#F7F4D5!important;}
+.dropdown-menu{background:var(--bg-white)!important;border:1px solid var(--border)!important;box-shadow:0 8px 32px rgba(10,51,35,.12)!important;border-radius:12px!important;}
+.dropdown-item{color:var(--text-secondary)!important;}
+.dropdown-item:hover{background:var(--green-50)!important;color:var(--green-700)!important;}
+.bg-white{background:var(--bg-white)!important;}
+.bg-light{background:var(--bg-soft)!important;}
+.text-dark,.text-black{color:var(--text-primary)!important;}
+.text-secondary{color:var(--text-secondary)!important;}
+.text-success{color:var(--green-400)!important;}
+.text-primary{color:var(--green-500)!important;}
+.text-warning{color:var(--rosy-500)!important;}
+.border{border-color:var(--border)!important;}
+hr{border-color:var(--border-soft)!important;opacity:.8!important;}
+.modal-content{background:var(--bg-white)!important;border-radius:20px!important;border:1px solid var(--border)!important;}
+.modal-header{background:var(--bg-soft)!important;border-color:var(--border)!important;border-radius:20px 20px 0 0!important;}
+.list-group-item{background:var(--bg-white)!important;border-color:var(--border-soft)!important;color:var(--text-primary)!important;}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:var(--bg-soft);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:99px;}
+::-webkit-scrollbar-thumb:hover{background:var(--green-400);}
