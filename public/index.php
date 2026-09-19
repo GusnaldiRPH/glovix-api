@@ -17,4 +17,8 @@ require __DIR__.'/../vendor/autoload.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+// Vercel serverless filesystem is read-only except /tmp,
+// so redirect Laravel's writable storage there.
+$app->useStoragePath('/tmp/storage');
+
 $app->handleRequest(Request::capture());
