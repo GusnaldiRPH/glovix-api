@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
@@ -16,5 +19,9 @@ require __DIR__.'/../vendor/autoload.php';
 // Bootstrap Laravel and handle the request...
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
+// Vercel serverless filesystem is read-only except /tmp,
+// so redirect Laravel's writable storage there.
+$app->useStoragePath('/tmp/storage');
 
 $app->handleRequest(Request::capture());
